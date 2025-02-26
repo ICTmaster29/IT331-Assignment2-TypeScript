@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic To-Do List</title>
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 20px 0 20px 20px; 
+            padding: 0; 
+        }
+        #taskList {
+            list-style-type: none;
+            padding: 0;
+            margin: 0; 
+        }
+        .task-item {
+            margin: 10px 0;
+            cursor: pointer;
+            text-align: left; 
+        }
+        .task-item:hover {
+            background-color: none;
+        }
+        h1 {
+            margin: 0 0 10px 0;
+        }
+        #taskInput {
+            margin-right: 10px; 
+        }
+        #filterInput {
+            margin-top: 10px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div>
+            <input type="text" id="taskInput" placeholder="Enter a new task">
+            <button id="addButton">Add Task</button>
+			<input type="text" id="filterInput" placeholder="Filter tasks">
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
